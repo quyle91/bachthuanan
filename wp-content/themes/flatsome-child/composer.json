@@ -1,0 +1,15 @@
+{
+    "name": "quyle91/myproject",
+    "autoload": {
+        "psr-4": {
+            "Project\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "le van quy",
+            "email": "quylv.dsth@gmail.com"
+        }
+    ],
+    "require": {}
+}
