@@ -2,6 +2,13 @@
 namespace Project\Controller;
 
 class Flatsome {
+	private static $instance = null;
+	public static function get_instance() {
+		if ( is_null( self::$instance ) ) {
+			self::$instance = new self();
+		}
+		return self::$instance;
+	}
 
 	function __construct() {
 		add_action( 'after_switch_theme', function () {

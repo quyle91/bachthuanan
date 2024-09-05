@@ -3,7 +3,11 @@
     "autoload": {
         "psr-4": {
             "Project\\": "src/"
-        }
+        },
+        "files": [
+            "src/Functions/functions.php",
+            "src/Functions/functions-admin.php"
+        ]
     },
     "authors": [
         {
