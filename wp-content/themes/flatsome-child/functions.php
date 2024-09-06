@@ -10,6 +10,7 @@ require __DIR__ ."/vendor/autoload.php";
 $GLOBALS['bta'] = [
     'Enqueue' => \Project\Controller\Enqueue::get_instance(),
     'Flatsome' => \Project\Controller\Flatsome::get_instance(),
+    'Shortcode' => \Project\Controller\Shortcode::get_instance(),
 ];
 
 add_action( 'after_setup_theme', function () {

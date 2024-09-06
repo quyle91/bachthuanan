@@ -27,16 +27,47 @@ body b, body strong {
   font-weight: 500;
 }
 
-body h1,
-body h2,
-body h3,
-body h4,
-body h5,
-body h6,
 body .heading-font,
 body .banner h1,
 body .banner h2 {
   font-weight: 500;
+}
+
+body .uppercase,
+body h6,
+body span.widget-title,
+body th {
+  letter-spacing: 0px;
+}
+
+@media (min-width: 768px) {
+  body h1 {
+    font-size: 36px;
+  }
+  body h2 {
+    font-size: 30px;
+  }
+  body h3 {
+    font-size: 26px;
+  }
+  body h4 {
+    font-size: 20px;
+  }
+  body h5 {
+    font-size: 16px;
+  }
+}
+.nav-column li.active > a,
+.nav-column li > a:hover,
+.nav-dropdown li.active > a,
+.nav-dropdown > li > a:hover,
+.nav-vertical-fly-out > li > a:hover,
+.nav > li.active > a,
+.nav > li.current > a,
+.nav > li > a.active,
+.nav > li > a.current,
+.nav > li > a:hover {
+  color: var(--primary-color) !important;
 }
 
 #header .header-wrapper .header-main {
@@ -221,4 +252,31 @@ form.searchform [type=submit] .icon-search:after {
   font-weight: normal;
   color: var(--blue-color);
   text-transform: unset;
+}
+
+.bta_tabs > .tabbed-content > h4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-transform: unset;
+  font-size: 30px;
+}
+@media (min-width: 768px) {
+  .bta_tabs > .tabbed-content > h4 {
+    width: 30%;
+    margin-bottom: 0;
+    line-height: 45px;
+  }
+}
+.bta_tabs > .tabbed-content > ul {
+  white-space: nowrap;
+  overflow: auto;
+  display: block;
+}
+@media (min-width: 768px) {
+  .bta_tabs > .tabbed-content > ul {
+    width: 70%;
+    text-align: right;
+  }
 }/*# sourceMappingURL=bta.css.map */
