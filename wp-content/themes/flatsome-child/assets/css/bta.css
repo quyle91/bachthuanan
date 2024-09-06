@@ -407,6 +407,9 @@ form .search_categories:focus {
   margin-top: 3px !important;
 }
 
+.product-small .wishlist-icon {
+  visibility: hidden;
+}
 .product-small .add-to-cart-button {
   display: none !important;
 }

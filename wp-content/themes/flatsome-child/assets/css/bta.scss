@@ -484,6 +484,9 @@ form{
     margin-top: 3px !important;
 }
 .product-small{
+    .wishlist-icon{
+        visibility: hidden;
+    }
     .add-to-cart-button{
         display: none !important;
     }
