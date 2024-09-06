@@ -13,6 +13,31 @@ class Shortcode{
     function __construct(){
         $this->bta_san_pham_moi();
         $this->bta_san_pham_tieubieu();
+        $this->bta_search();
+    }
+
+    function enable_search_category(){
+        return true;
+    }
+
+    function bta_search(){
+		$___                     = new \Adminz\Helper\FlatsomeELement;
+		$___->shortcode_name     = __FUNCTION__;
+		$___->shortcode_title    = __FUNCTION__;
+		$___->shortcode_icon     = 'text';
+		$___->options            = [
+			//
+		];
+		$___->shortcode_callback = function ($atts, $content = null) {
+			ob_start();
+            $name = 'header_search_categories';
+            add_filter("theme_mod_{$name}", [$this, 'enable_search_category']);
+			?>
+            [search]
+            <?php
+            return do_shortcode( ob_get_clean() );
+		};
+		$___->general_element();
     }
 
     function bta_san_pham_moi(){

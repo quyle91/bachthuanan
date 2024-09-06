@@ -35,5 +35,13 @@ class Enqueue {
 			BTA_VER,
 			'all'
 		);
+
+		wp_enqueue_script(
+			'bta-js',
+			BTA_DIR_URL . "/assets/js/bta.js",
+			[], 
+			BTA_VER, 
+			true
+		);
 	}
 }
