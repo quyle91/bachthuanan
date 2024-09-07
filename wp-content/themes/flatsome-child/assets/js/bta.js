@@ -18,10 +18,13 @@ document.querySelectorAll('.bta_add_to_cart').forEach((wish) => {
 
 document.querySelectorAll('.bta_tabs').forEach(bta_tab => {
     const nav = bta_tab.querySelector('.nav');
+    if(!bta_tab.getAttribute('data-add-custombutton')){
+        return;
+    }
     
     // left
     const leftButton = document.createElement("li");
-    leftButton.classList.add("hide-for-small", "button", "icon", "is-outline","circle");
+    leftButton.classList.add("hide-for-small", "button", "icon", "is-outline", "circle", "customButton");
     leftButton.innerHTML = '<i class="icon-angle-left"></i>';
     nav.appendChild(leftButton);
     leftButton.addEventListener("click", function(){
@@ -37,7 +40,7 @@ document.querySelectorAll('.bta_tabs').forEach(bta_tab => {
 
     // right
     const rightButton = document.createElement("li");
-    rightButton.classList.add("hide-for-small", "button", "icon", "is-outline", "circle");
+    rightButton.classList.add("hide-for-small", "button", "icon", "is-outline", "circle", "customButton");
     rightButton.innerHTML = '<i class="icon-angle-right"></i>';
     nav.appendChild(rightButton);
     rightButton.addEventListener("click", function () {

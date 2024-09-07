@@ -37,13 +37,13 @@ class Shortcode{
                         ?>
                         [adminz_slider_custom_item_wrap]
                             [testimonial 
-                                stars="<?= $single['star'] ?>"
-                                image="<?= $single['avatar'] ?>" 
+                                stars="<?= $single['star']?? 5 ?>"
+                                image="<?= $single['avatar']?? 0 ?>" 
                                 image_width="121" 
-                                name="<?= $single['name'] ?>" 
-                                company="<?= $single['position'] ?>"
+                                name="<?= $single['name']?? '' ?>" 
+                                company="<?= $single['position']?? '' ?>"
                                 ]
-                            <p><?= $single['text'] ?></p>
+                            <p><?= $single['text']?? '' ?></p>
                             [/testimonial]
                         [/adminz_slider_custom_item_wrap]
                         <?php
@@ -174,7 +174,7 @@ class Shortcode{
         $___->shortcode_callback = function ($atts, $content=null) {
 			ob_start();
 			?>
-            <div class="bta_tabs">
+            <div class="bta_tabs divider-tab-panels" data-add-custombutton="true">
                 [tabgroup title="<?= __('Sản phẩm mới', 'bta') ?>" style="simple" nav="normal"]
                     [tab title="<?= __('Tất cả', 'bta') ?>"]
                         [ux_products type="row" products="4"]
@@ -214,7 +214,7 @@ class Shortcode{
 		$___->shortcode_callback = function ($atts, $content = null) {
 			ob_start();
 			?>
-            <div class="bta_tabs">
+            <div class="bta_tabs divider-tab-panels" data-add-custombutton="true">
                 [tabgroup title="<?= __( 'Sản phẩm tiêu biểu', 'bta' ) ?>" style="simple" nav="normal"]
 				    [tab title="<?= __( 'Tất cả', 'bta' ) ?>"]
                         [ux_products type="row" show="featured" products="8"]
@@ -254,8 +254,35 @@ class Shortcode{
 		$___->shortcode_callback = function ($atts, $content = null) {
 			ob_start();
 			?>
-            <div class="bta_tabs">
-                [tabgroup title="<?= __( 'Khuyến mãi lớn', 'bta' ) ?>" style="simple" nav="normal"]
+            <div class="bta_tabs x divider-tab-content" data-add-custombutton="true">
+                <style type="text/css">
+                    @media(min-width: 850px){
+                        .x .nav{
+                            display: flex !important;
+                        }
+                        .x .nav .customButton{
+                            margin-left: auto;
+                        }
+                        .x .nav .customButton +.customButton{
+                            margin-left: .12em;
+                        }
+                    }
+                </style>
+                <div class="countdown_custom row">
+                    <div class="col small-12 large-9">
+                        <div class="col-inner">
+                            <h4 class="uppercase text-left">
+                                <?= __( 'Khuyến mãi lớn', 'bta' ) ?>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col small-12 large-3">
+                        <div class="col-inner">
+                            [adminz_countdown id="adminz_699681564" text_days="" text_hours="" text_minutes="" text_seconds=""]
+                        </div>
+                    </div>
+                </div>
+                [tabgroup title="" style="simple" nav="normal"]
 				    [tab title="<?= __( 'Tất cả', 'bta' ) ?>"]
                         [ux_products type="row" show="onsale" products="16"]
                     [/tab]
@@ -278,8 +305,10 @@ class Shortcode{
                 [/tabgroup]
             </div>
             <?php
-            return do_shortcode( ob_get_clean() );
+			return do_shortcode( ob_get_clean() );
 		};
 		$___->general_element();
+
+		
     }
 }

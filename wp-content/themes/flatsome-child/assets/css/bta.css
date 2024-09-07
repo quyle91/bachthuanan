@@ -309,15 +309,18 @@ body .nav-pagination > li > span {
   border-radius: 10px;
 }
 
+form textarea {
+  border-radius: 10px !important;
+}
 form input {
   line-height: 50px !important;
   min-height: 50px !important;
-  border-radius: 15px !important;
+  border-radius: 10px !important;
 }
 form [type=submit] {
   line-height: 50px !important;
   min-height: 50px !important;
-  border-radius: 15px !important;
+  border-radius: 10px !important;
   box-sizing: border-box;
 }
 form.searchform input {
@@ -339,11 +342,10 @@ form.searchform [type=submit] {
 }
 form .search_categories {
   position: absolute;
-  right: 110px;
+  right: 120px;
   z-index: 1;
   top: 50%;
   transform: translateY(-50%);
-  background: none;
   border: none;
   box-shadow: unset;
 }
@@ -472,11 +474,11 @@ form .search_categories:focus {
   cursor: pointer;
 }
 
-.bta_tabs > .tabbed-content .tab-panels {
+.bta_tabs.divider-tab-panels > .tabbed-content .tab-panels {
   padding-top: 50px;
   position: relative;
 }
-.bta_tabs > .tabbed-content .tab-panels:before {
+.bta_tabs.divider-tab-panels > .tabbed-content .tab-panels:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -484,7 +486,7 @@ form .search_categories:focus {
   background: var(--light-gray-color);
   top: 20px;
 }
-.bta_tabs > .tabbed-content .tab-panels:after {
+.bta_tabs.divider-tab-panels > .tabbed-content .tab-panels:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -492,20 +494,29 @@ form .search_categories:focus {
   background: var(--light-gray-color);
   top: 16px;
 }
-.bta_tabs > .tabbed-content > h4 {
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-transform: unset;
-  font-size: 1.2em;
+.bta_tabs.divider-tab-content > .tabbed-content {
+  padding-top: 50px;
+  position: relative;
+}
+.bta_tabs.divider-tab-content > .tabbed-content:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: var(--light-gray-color);
+  top: 20px;
+}
+.bta_tabs.divider-tab-content > .tabbed-content:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: var(--light-gray-color);
+  top: 16px;
 }
 @media (min-width: 850px) {
   .bta_tabs > .tabbed-content > h4 {
-    font-size: 30px;
     width: 30%;
-    margin-bottom: 0;
-    line-height: 45px;
   }
 }
 .bta_tabs > .tabbed-content > ul {
@@ -514,7 +525,7 @@ form .search_categories:focus {
   display: block;
 }
 @media (min-width: 850px) {
-  .bta_tabs > .tabbed-content > ul {
+  .bta_tabs > .tabbed-content > ul:nth-child(2) {
     width: 70%;
     text-align: right;
   }
@@ -523,6 +534,21 @@ form .search_categories:focus {
   .bta_tabs > .tabbed-content > ul li a {
     padding-left: 0.5em;
     padding-right: 0.5em;
+  }
+}
+.bta_tabs h4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-transform: unset;
+  font-size: 1.2em;
+}
+@media (min-width: 850px) {
+  .bta_tabs h4 {
+    font-size: 30px;
+    margin-bottom: 0;
+    line-height: 45px;
   }
 }
 .bta_tabs .nav > .button {
@@ -534,6 +560,24 @@ form .search_categories:focus {
   color: white;
   border-color: var(--primary-color);
   background: var(--primary-color);
+}
+.bta_tabs .adminz_countdown .col {
+  padding-bottom: 0px;
+}
+.bta_tabs .adminz_countdown .col .col-inner {
+  border-radius: 10px;
+}
+.bta_tabs .adminz_countdown .col h3 {
+  font-weight: 600;
+  font-size: 16px;
+}
+.bta_tabs .adminz_countdown .col:not(:last-child) h3 {
+  position: relative;
+}
+.bta_tabs .adminz_countdown .col:not(:last-child) h3:before {
+  content: ":";
+  position: absolute;
+  right: -11px;
 }
 
 .bta_cat_thumb {
