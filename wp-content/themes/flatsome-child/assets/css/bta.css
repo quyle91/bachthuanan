@@ -362,6 +362,9 @@ form .search_categories:focus {
   padding: 5px 15px;
   font-weight: 500;
 }
+.post-item .box .badge .badge-inner .post-date-day {
+  font-size: 1.5em;
+}
 
 .bta_box_category.has-shadow .box:not(.box-overlay):not(.box-shade), .bta_box_category.has-shadow.box:not(.box-overlay):not(.box-shade) {
   border-radius: 10px;
