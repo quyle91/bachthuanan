@@ -31,14 +31,10 @@ body th{
     border-radius: 10px;
 }
 
-
-.radius{
-    &.img{
-        img {
-            border-radius: 10px;
-        }
-    }
+.button, button{
+    font-weight: 500 !important;
 }
+
 
 @media(min-width: 768px){
     body h1{
@@ -294,6 +290,7 @@ form{
                     content: var(--text-tim-kiem);
                     font-family: Montserrat, sans-serif;
                     font-size: 16px !important;
+                    font-weight: 500 !important;
                 }
             }
         }
@@ -314,6 +311,42 @@ form{
     
 }
 
+.post-item{
+    .box{
+        .box-image{
+            border-radius: 10px;
+        }
+        .box-text{
+            .button{
+                font-size: 16px;
+                color: var(--primary-color);
+            }
+            .cat-label{
+                visibility: hidden;
+            }
+            .is-divider{
+                visibility: hidden;
+            }
+            .from_the_blog_comments{
+                visibility: hidden;
+            }
+        }
+        .badge {
+            top: 0;
+            right: 20px;
+            left: unset;
+            .badge-inner{
+                background-color: var(--primary-color);
+                color: white;
+                border-color: var(--primary-color);
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                padding: 5px 15px;
+                font-weight: 500;
+            }
+        }
+    }
+}
 
 // custom blocks
 .bta_box_category {
@@ -460,7 +493,6 @@ form{
             width: 100px;
             height: 100px;
             border-radius: 5px !important;
-            border: 1px solid lightgray;
             padding: 0;
         }
     }
@@ -501,8 +533,23 @@ form{
     }
 }
 
+.radius {
+    &.img {
+        img {
+            border-radius: 10px;
+        }
+    }
+}
 
-
+.bta_icon_box_2{
+    a{
+        color: var(--secondary-color);
+        font-weight: 500;
+        &:hover{
+            color: var(--primary-color);
+        }
+    }
+}
 
 
 

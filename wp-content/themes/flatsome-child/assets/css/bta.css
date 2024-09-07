@@ -45,8 +45,8 @@ body th {
   border-radius: 10px;
 }
 
-.radius.img img {
-  border-radius: 10px;
+.button, button {
+  font-weight: 500 !important;
 }
 
 @media (min-width: 768px) {
@@ -241,6 +241,7 @@ form.searchform [type=submit] .icon-search:after {
   content: var(--text-tim-kiem);
   font-family: Montserrat, sans-serif;
   font-size: 16px !important;
+  font-weight: 500 !important;
 }
 form .search_categories {
   position: absolute;
@@ -254,6 +255,37 @@ form .search_categories {
 }
 form .search_categories:focus {
   box-shadow: unset;
+}
+
+.post-item .box .box-image {
+  border-radius: 10px;
+}
+.post-item .box .box-text .button {
+  font-size: 16px;
+  color: var(--primary-color);
+}
+.post-item .box .box-text .cat-label {
+  visibility: hidden;
+}
+.post-item .box .box-text .is-divider {
+  visibility: hidden;
+}
+.post-item .box .box-text .from_the_blog_comments {
+  visibility: hidden;
+}
+.post-item .box .badge {
+  top: 0;
+  right: 20px;
+  left: unset;
+}
+.post-item .box .badge .badge-inner {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 5px 15px;
+  font-weight: 500;
 }
 
 .bta_box_category.has-shadow .box:not(.box-overlay):not(.box-shade), .bta_box_category.has-shadow.box:not(.box-overlay):not(.box-shade) {
@@ -386,7 +418,6 @@ form .search_categories:focus {
   width: 100px;
   height: 100px;
   border-radius: 5px !important;
-  border: 1px solid lightgray;
   padding: 0;
 }
 .testimonial-box .icon-box-text {
@@ -426,6 +457,18 @@ form .search_categories:focus {
     margin-left: 50px;
   }
 }
+.radius.img img {
+  border-radius: 10px;
+}
+
+.bta_icon_box_2 a {
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+.bta_icon_box_2 a:hover {
+  color: var(--primary-color);
+}
+
 .badge-circle,
 .badge-outline {
   height: 30px !important;
