@@ -12,8 +12,13 @@ body .nav:hover>li:not(:hover)>a.account-link:before{ opacity: 1; }
 body p.lead{font-size: 1.25em;}
 body .heading-font,
 body .banner h1,
-body .banner h2 {
+body .banner h2{
     font-weight: 500;
+}
+
+body label,
+body legend {
+    font-weight: 600;
 }
 
 body .uppercase,
@@ -35,6 +40,11 @@ body th{
     font-weight: 500 !important;
 }
 
+input[type=checkbox] {
+    accent-color: var(--primary-color);
+    width: 20px;
+    height: 20px;
+}
 
 @media(min-width: 768px){
     body h1{
@@ -69,6 +79,50 @@ body th{
 .nav>li>a.current,
 .nav>li>a:hover{
     color: var(--primary-color) !important;
+}
+
+.featured-title .page-title-inner{
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+
+body .nav-pagination>li>a,
+body .nav-pagination>li>span{
+    background-color: #EDF3F6;
+    border-color: #EDF3F6;
+    border-radius: 7px;
+}
+.widget{
+    >.is-divider{
+        visibility: hidden;
+    }
+    .widget-title{
+        color: var(--primary-color);
+        @media(min-width: 768px){
+            font-size: 18px;
+        }
+    }
+    &.widget_product_categories{
+        ul{
+            border-color: transparent;
+            li {
+                border-color: transparent;
+                margin-top: 10px;
+                a{
+                    font-weight: 600;
+                }
+            }
+            &.children{
+                padding-left: 0px;
+                li{
+                    a{
+                        font-weight: 500;
+                    }
+                }
+            }
+        }        
+    }
+    
 }
 
 // main style
@@ -287,17 +341,9 @@ form{
             border-color: var(--primary-color);
             border-top-left-radius: 0px !important;
             border-bottom-left-radius: 0px !important;
-            .icon-search {
-                &:before {
-                    display: none;
-                }
-        
-                &:after {
-                    content: var(--text-tim-kiem);
-                    font-family: Montserrat, sans-serif;
-                    font-size: 16px !important;
-                    font-weight: 500 !important;
-                }
+            @media(min-width: 768px){
+                padding-left: 1em;
+                padding-right: 1em;
             }
         }
     }
@@ -314,7 +360,27 @@ form{
             box-shadow: unset;
         }
     }
-    
+}
+
+#header, #content{
+    form {
+        &.searchform {
+            [type="submit"] {
+                .icon-search {
+                    &:before {
+                        display: none;
+                    }
+            
+                    &:after {
+                        content: var(--text-tim-kiem);
+                        font-family: Montserrat, sans-serif;
+                        font-size: 16px !important;
+                        font-weight: 500 !important;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .post-item{
@@ -489,6 +555,12 @@ form{
     }
 }
 
+.bta_cat_thumb{
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
 .adminz_slider_custom{
     .flickity-button{
         svg{
@@ -596,6 +668,20 @@ form{
     }
 }
 
+.bta_woocommerce_before_shop_loop{
+    >.col:nth-child(2){
+        @media(min-width: 768px){
+            text-align: right;
+        }
+    }
+    .woocommerce-ordering{
+        margin: 0;
+        select{
+            margin: 0;
+        }
+    }
+}
+
 
 
 // Woo
@@ -647,7 +733,7 @@ form{
 }
 .product-small{
     .product-title{
-        font-weight: 600;
+        font-size: 16px;
     }
     .wishlist-icon{
         visibility: hidden;
@@ -656,16 +742,67 @@ form{
         display: none !important;
     }
 }
-span.price{
+.price{
     color: var(--primary-color);
     .amount{
         color: var(--primary-color);
     }
+    bdi{
+        font-weight: 600;
+    }
+}
+.product-title {
+    font-weight: 600;
+}
+.product-main{
+    .product-info{
+        .yith-wcwl-add-to-wishlist{
+            line-height: 50px;
+            margin-bottom: 20px;
+            span{
+                &:before {
+                    content: url("data:image/svg+xml,%3Csvg width='17' height='16' viewBox='0 0 17 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.8279 2.40299C14.0159 1.49399 12.8899 0.993988 11.6559 0.993988C9.91788 0.993988 8.82189 2.01199 8.20788 2.86499C8.14289 2.95499 8.07989 3.04899 8.01789 3.14599C7.95689 3.04899 7.89289 2.95499 7.82889 2.86499C7.21489 2.01199 6.11889 0.993988 4.37989 0.993988C3.14589 0.993988 2.01989 1.49399 1.20789 2.40299C0.437886 3.26399 0.0138855 4.41499 0.0138855 5.64399C0.0138855 6.97799 0.536885 8.21199 1.65889 9.52699C2.63789 10.675 4.03389 11.849 5.65889 13.214L5.71889 13.263C6.29889 13.752 6.90089 14.257 7.55989 14.825C7.68589 14.935 7.84889 14.995 8.01789 14.995C8.18789 14.995 8.35089 14.935 8.49689 14.808C9.11589 14.273 9.70089 13.782 10.2659 13.306L10.3779 13.213C11.9979 11.852 13.3979 10.676 14.3769 9.52699C15.4989 8.21199 16.0219 6.97799 16.0219 5.64399C16.0219 4.41499 15.5989 3.26399 14.8279 2.40299ZM9.30488 12.305C8.88888 12.654 8.46288 13.013 8.01789 13.393C7.57388 13.013 7.14689 12.654 6.73089 12.305L6.56089 12.161C3.45789 9.55499 1.40889 7.83299 1.40889 5.64399C1.40889 4.75099 1.70789 3.92499 2.25289 3.31599C2.79689 2.70799 3.55189 2.37299 4.37989 2.37299C5.52389 2.37299 6.26889 3.07499 6.69289 3.66499C7.08189 4.20799 7.28589 4.75399 7.35589 4.96399C7.44889 5.24799 7.71489 5.43999 8.01789 5.43999C8.32089 5.43999 8.58688 5.24799 8.67988 4.96399C8.75089 4.75399 8.95389 4.20799 9.34389 3.66499C9.76689 3.07499 10.5129 2.37299 11.6559 2.37299C12.4839 2.37299 13.2389 2.70799 13.7829 3.31699C14.3279 3.92499 14.6269 4.75099 14.6269 5.64399C14.6269 7.83299 12.5779 9.55499 9.47488 12.161L9.30488 12.305Z' fill='%233B4964'/%3E%3C/svg%3E%0A");
+                    vertical-align: middle;
+                    margin-right: 5px;
+                }
+            }
+        }
+        .product_meta{
+            &>span{
+                border-top: 0px;
+                margin-bottom: 20px;
+                font-size: 16px;
+                a{
+                    font-size: 14px;
+                    background-color: #EDF3F6;
+                    padding: 11px;
+                    border-radius: 5px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
 }
 
-
+.product-footer{
+    .woocommerce-tabs{
+        li{
+            a{
+                padding-left: 1em;
+                padding-right: 1em;
+            }
+        }
+    }
+    .related{
+        border-color: transparent;
+        margin-bottom: 30px;
+        .product-section-title{
+            text-transform: unset;
+        }
+    }
+}
 
 // Yith
-.yith-wcwl-add-to-wishlist{
+.product-small .yith-wcwl-add-to-wishlist{
     display: none;
 }
