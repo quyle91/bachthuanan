@@ -461,11 +461,34 @@ form .search_categories:focus {
   border-radius: 10px;
 }
 
-.bta_icon_box_2 a {
+.bta_icon_box_2 .col .col-inner {
+  margin-top: 30px;
+}
+.bta_icon_box_2 .icon-box-img {
+  margin-top: -30px !important;
+  background-color: white;
+  border-radius: 100px;
+  border: 6px solid #f8f5f7;
+  width: 80px !important;
+  height: 80px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bta_icon_box_2 .icon-box-img .icon {
+  width: 40px;
+}
+.bta_icon_box_2 .icon-box-text {
+  padding: 0 10px 20px 10px;
+}
+.bta_icon_box_2 .icon-box-text strong {
+  font-size: 18px;
+}
+.bta_icon_box_2 .icon-box-text a {
   color: var(--secondary-color);
   font-weight: 500;
 }
-.bta_icon_box_2 a:hover {
+.bta_icon_box_2 .icon-box-text a:hover {
   color: var(--primary-color);
 }
 

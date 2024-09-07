@@ -542,11 +542,37 @@ form{
 }
 
 .bta_icon_box_2{
-    a{
-        color: var(--secondary-color);
-        font-weight: 500;
-        &:hover{
-            color: var(--primary-color);
+    .col{
+        .col-inner{
+            margin-top: 30px;
+        }
+    }
+    .icon-box-img{
+        margin-top: -30px !important;
+        background-color: white;
+        border-radius: 100px;
+        border: 6px solid #f8f5f7;
+        width: 80px !important;
+        height: 80px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .icon {
+            width: 40px;
+            img {}
+        }
+    }
+    .icon-box-text{
+        padding: 0 10px 20px 10px;
+        strong{
+            font-size: 18px;
+        }
+        a{
+            color: var(--secondary-color);
+            font-weight: 500;
+            &:hover{
+                color: var(--primary-color);
+            }
         }
     }
 }
