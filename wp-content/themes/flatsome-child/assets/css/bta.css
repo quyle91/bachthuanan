@@ -202,10 +202,17 @@ body .nav-pagination > li > span {
     padding-bottom: 80px;
   }
 }
+#main #content .section-title-normal,
+#main #content .section-title-center,
+#main #content .section-title-bold-center {
+  border-color: transparent;
+}
+#main #content .section-title-normal b,
 #main #content .section-title-center b,
 #main #content .section-title-bold-center b {
   visibility: hidden;
 }
+#main #content .section-title-normal span,
 #main #content .section-title-center span,
 #main #content .section-title-bold-center span {
   border-color: transparent;
@@ -603,6 +610,10 @@ form .search_categories:focus {
 }
 .bta_woocommerce_before_shop_loop .woocommerce-ordering select {
   margin: 0;
+}
+
+.adminz_countdown h3 {
+  margin-bottom: 0;
 }
 
 .badge-circle,

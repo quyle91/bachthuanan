@@ -70,6 +70,9 @@ class Flatsome {
 	function page_header(){
 
 		add_action('flatsome_product_title', function(){
+			if(is_front_page()){
+				return;
+			}
             if ( is_page() or is_home() or is_singular('post') ) {
                 ob_start();
                 ?>
@@ -82,6 +85,9 @@ class Flatsome {
         });
 		
 		add_action( 'flatsome_after_header', function () {
+			if(is_front_page()){
+				return;
+			}
 			if ( is_page() or is_home() or is_singular('post') ) {
 				wc_get_template_part( 'single-product/headers/header-product', 'featured-center' );
 			}
