@@ -95,6 +95,12 @@ input[type=checkbox] {
   padding-bottom: 50px !important;
 }
 
+body a.icon-remove,
+body a.remove {
+  background-color: #EDF3F6;
+  border-color: #EDF3F6;
+}
+
 body .nav-pagination > li > a,
 body .nav-pagination > li > span {
   background-color: #EDF3F6;
@@ -475,6 +481,16 @@ form .search_categories:focus {
     padding-right: 0.5em;
   }
 }
+.bta_tabs .nav > .button {
+  border-color: #FFF2E2;
+  background: #FFF2E2;
+  color: var(--secondary-color);
+}
+.bta_tabs .nav > .button:hover {
+  color: white;
+  border-color: var(--primary-color);
+  background: var(--primary-color);
+}
 
 .bta_cat_thumb {
   width: 30px;
@@ -695,6 +711,11 @@ form .search_categories:focus {
 }
 .product-footer .related .product-section-title {
   text-transform: unset;
+}
+
+.shop-page-title .breadcrumbs {
+  font-weight: 500;
+  font-size: 0.9em;
 }
 
 .product-small .yith-wcwl-add-to-wishlist {

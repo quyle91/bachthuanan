@@ -19,6 +19,16 @@ class Woocommerce {
 	}
 
     function add_header_product_image(){
+		add_action( 'template_redirect', function(){
+			if ( is_woocommerce() and is_single() ) {
+				add_action( 'flatsome_before_breadcrumb', function () {
+					ob_start();
+				} );
+				add_action( 'flatsome_after_breadcrumb', function () {
+					ob_get_clean();
+				} );
+			}
+        }, 99 );
 
 		add_action('flatsome_product_title', function(){
             if ( is_product() ) {
@@ -37,6 +47,7 @@ class Woocommerce {
 				wc_get_template_part( 'single-product/headers/header-product', 'featured-center' );
 			}
         }, 10 );
+
         add_action('wp_head', function(){
             if ( is_product() ) {
                 ?>

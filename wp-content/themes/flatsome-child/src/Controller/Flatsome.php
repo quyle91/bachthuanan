@@ -19,6 +19,7 @@ class Flatsome {
 		} );
 
 		$this->custom_quick_view();
+		$this->page_header();
 	}
 
 	function custom_quick_view(){
@@ -64,5 +65,26 @@ class Flatsome {
 			</svg>
 		</a>
 		<?php 
+	}
+
+	function page_header(){
+
+		add_action('flatsome_product_title', function(){
+            if ( is_page() or is_home() or is_singular('post') ) {
+                ob_start();
+                ?>
+                <div class="strong shop-page-title is-xlarge" style="margin-bottom: 0.5em;">
+                    <?= get_the_title() ?>
+                </div>
+                <?php
+                echo ob_get_clean();
+            }
+        });
+		
+		add_action( 'flatsome_after_header', function () {
+			if ( is_page() or is_home() or is_singular('post') ) {
+				wc_get_template_part( 'single-product/headers/header-product', 'featured-center' );
+			}
+		}, 10 );
 	}
 }

@@ -86,6 +86,11 @@ input[type=checkbox] {
     padding-bottom: 50px !important;
 }
 
+body a.icon-remove,
+body a.remove{
+    background-color: #EDF3F6;
+    border-color: #EDF3F6;
+}
 body .nav-pagination>li>a,
 body .nav-pagination>li>span{
     background-color: #EDF3F6;
@@ -553,6 +558,18 @@ form{
             }
         }
     }
+    .nav{
+        >.button{
+            border-color: #FFF2E2;
+            background: #FFF2E2;
+            color: var(--secondary-color);
+            &:hover{
+                color: white;
+                border-color: var(--primary-color);
+                background: var(--primary-color);
+            }
+        }
+    }
 }
 
 .bta_cat_thumb{
@@ -783,7 +800,6 @@ form{
         }
     }
 }
-
 .product-footer{
     .woocommerce-tabs{
         li{
@@ -801,7 +817,12 @@ form{
         }
     }
 }
-
+.shop-page-title{
+    .breadcrumbs{
+        font-weight: 500;
+        font-size: 0.9em;
+    }
+}
 // Yith
 .product-small .yith-wcwl-add-to-wishlist{
     display: none;
