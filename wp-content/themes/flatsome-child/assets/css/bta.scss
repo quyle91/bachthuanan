@@ -214,6 +214,12 @@ body th{
         li{
             color: #A9A9A9;
         }
+        ul{
+            li{
+                list-style: none;
+                margin-left: 0;
+            }
+        }
 
         p.lead{
             margin-bottom: 10px;
@@ -364,7 +370,13 @@ form{
         }
         .header-title{
             text-transform: unset;
-            font-size: 18px;
+            @media(min-width: 768px){
+                font-size: 18px;
+            }
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
         .box-text{
             padding-bottom: 10px;
@@ -449,8 +461,9 @@ form{
             -webkit-box-orient: vertical;
             overflow: hidden;
             text-transform: unset;
-            font-size: 30px;
+            font-size: 1.2em;
             @media(min-width: 768px) {
+                font-size: 30px;
                 width: 30%;
                 margin-bottom: 0;
                 line-height: 45px;
@@ -565,7 +578,13 @@ form{
     .icon-box-text{
         padding: 0 10px 20px 10px;
         strong{
-            font-size: 18px;
+            @media(min-width: 768px){
+                font-size: 18px;
+            }
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
         a{
             color: var(--secondary-color);
