@@ -342,5 +342,6 @@ html[ng-app="uxBuilder"] select[multiple="multiple"]{ overflow: hidden; }
 .article-inner:hover{ box-shadow: none !important; }
 @media (min-width: 850px){
 	body.archive .blog-wrapper>.row.align-center>.large-10{ max-width: 100%; flex-basis: 100%; }
+	body.single-post .blog-wrapper>.row.align-center>.large-10{ max-width: 100%; flex-basis: 100%; }
 }
 
