@@ -22,11 +22,13 @@ class Woocommerce {
 		add_action( 'template_redirect', function(){
 			if ( is_woocommerce() and is_single()) {
 				add_action( 'flatsome_before_breadcrumb', function () {
+                    // kiểm tra có phải breadcrumb trong maincontent ko
                     if(did_action( 'woocommerce_before_main_content' )){
 					    ob_start();
 					}
 				} );
 				add_action( 'flatsome_after_breadcrumb', function () {
+                    // kiểm tra có phải breadcrumb trong maincontent ko
                     if(did_action( 'woocommerce_before_main_content' )){
 					    ob_get_clean();
                     }
