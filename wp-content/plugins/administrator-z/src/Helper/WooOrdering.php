@@ -60,14 +60,16 @@ class WooOrdering {
 	}
 
 	function setup_ordering( $option ) {
-		$default = array(
+		
+		// fix fillters
+		$default = apply_filters('woocommerce_catalog_orderby', array(
 			'menu_order' => __( 'Default sorting', 'woocommerce' ),
 			'popularity' => __( 'Sort by popularity', 'woocommerce' ),
 			'rating'     => __( 'Sort by average rating', 'woocommerce' ),
 			'date'       => __( 'Sort by latest', 'woocommerce' ),
 			'price'      => __( 'Sort by price: low to high', 'woocommerce' ),
 			'price-desc' => __( 'Sort by price: high to low', 'woocommerce' ),
-		);
+		));
 		$default['__discount_amount'] = __( "Discount amount", 'woocommerce' );
 		foreach ($option as $key => $value) {
 			$this->list[$value] = $default[$value];

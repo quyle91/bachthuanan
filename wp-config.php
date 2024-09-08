@@ -1,5 +1,5 @@
 <?php
-define( 'WP_CACHE', true ); // Added by WP Rocket
+define( 'WP_CACHE', false ); // Added by WP Rocket
 
 define( 'WP_SITEURL', 'https://bachthuanan.local' );
 define( 'WP_HOME', 'https://bachthuanan.local' );

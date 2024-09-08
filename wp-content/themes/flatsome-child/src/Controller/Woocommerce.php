@@ -20,12 +20,16 @@ class Woocommerce {
 
     function add_header_product_image(){
 		add_action( 'template_redirect', function(){
-			if ( is_woocommerce() and is_single() ) {
+			if ( is_woocommerce() and is_single()) {
 				add_action( 'flatsome_before_breadcrumb', function () {
-					ob_start();
+                    if(did_action( 'woocommerce_before_main_content' )){
+					    ob_start();
+					}
 				} );
 				add_action( 'flatsome_after_breadcrumb', function () {
-					ob_get_clean();
+                    if(did_action( 'woocommerce_before_main_content' )){
+					    ob_get_clean();
+                    }
 				} );
 			}
         }, 99 );

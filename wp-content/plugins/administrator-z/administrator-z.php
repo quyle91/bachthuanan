@@ -5,7 +5,7 @@
 * Plugin URI: http://#
 * Author: quyle91
 * Author URI: http://quyle91.github.io
-* Version: 2024.08.24
+* Version: 2024.09.07
 * License: GPL2
 * Text Domain: administrator-z
 * Domain Path: /languages
@@ -38,7 +38,7 @@ if ( !defined( 'ABSPATH' ) ) {
 }
 
 define( 'ADMINZ', true );
-define( 'ADMINZ_VERSION', '2024.08.24' );
+define( 'ADMINZ_VERSION', '2024.09.07' );
 define( 'ADMINZ_DIR', plugin_dir_path( __FILE__ ) );
 define( 'ADMINZ_DIR_URL', plugin_dir_url( __FILE__ ) );
 define( 'ADMINZ_BASENAME', plugin_basename( __FILE__ ) );
