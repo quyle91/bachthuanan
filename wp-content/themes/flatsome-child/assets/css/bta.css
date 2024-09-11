@@ -312,7 +312,12 @@ body .nav-pagination > li > span {
 form textarea {
   border-radius: 10px !important;
 }
-form input {
+form select,
+form input[type=text],
+form input[type=number],
+form input[type=password],
+form input[type=email],
+form input[type=search] {
   line-height: 50px !important;
   min-height: 50px !important;
   border-radius: 10px !important;

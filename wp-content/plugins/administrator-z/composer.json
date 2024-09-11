@@ -5,6 +5,7 @@
             "Adminz\\": "src/"
         },
         "files": [
+            "includes/functions/admin.php",
             "includes/functions/customize.php",
             "includes/functions/enqueue.php",
             "includes/functions/functions.php",

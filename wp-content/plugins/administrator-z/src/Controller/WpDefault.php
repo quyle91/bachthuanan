@@ -56,6 +56,12 @@ final class WpDefault {
 		}
 
 		// 
+		if ( $this->settings['adminz_admin_logo'] ?? "" ) {
+			$image_url = $this->settings['adminz_admin_logo'];
+			adminz_admin_login_logo($image_url);
+		}
+
+		// 
 		if ( $this->settings['adminz_use_classic_editor'] ?? "" ) {
 			add_filter( 'use_block_editor_for_post', function () {
 				return false; } );
@@ -316,6 +322,27 @@ final class WpDefault {
 					'value' => $this->settings['adminz_notice']?? "",
 					'copy' => 'adminz_notice',
 				]);
+			},
+			$this->option_group,
+			'adminz_default'
+		);
+
+        // field 
+		add_settings_field(
+			wp_rand(),
+			'Admin logo',
+			function () {
+				// field
+				echo adminz_form_field( [ 
+					'field'     => 'input',
+					'attribute' => [ 
+						'type'        => 'text',
+						'name'        => $this->option_name . '[adminz_admin_logo]',
+						'placeholder' => '',
+						'value'       => $this->settings['adminz_admin_logo'] ?? "",
+					],
+					'note'      => 'Paste image url here',
+				] );
 			},
 			$this->option_group,
 			'adminz_default'
