@@ -405,8 +405,9 @@ form{
         z-index: 1;
         top: 50%;
         transform: translateY(-50%);
-        border: none;
+        border-color: transparent;
         box-shadow: unset;
+        background: none !important;
         &:focus{
             box-shadow: unset;
         }

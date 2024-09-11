@@ -9,6 +9,7 @@ require __DIR__ ."/vendor/autoload.php";
 
 $GLOBALS['bta'] = [
     'Enqueue' => \Project\Controller\Enqueue::get_instance(),
+    'Acf' => \Project\Controller\Acf::get_instance(),
     'Flatsome' => \Project\Controller\Flatsome::get_instance(),
     'Woocommerce' => \Project\Controller\Woocommerce::get_instance(),
     'Shortcode' => \Project\Controller\Shortcode::get_instance(),

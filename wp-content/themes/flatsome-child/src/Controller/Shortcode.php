@@ -11,12 +11,60 @@ class Shortcode{
 	}
 
     function __construct(){
+        $this->bta_slide();
         $this->bta_san_pham_moi();
         $this->bta_san_pham_tieubieu();
         $this->bta_san_pham_sale();
         $this->bta_search();
         $this->override_testimonial();
         $this->bta_testimonial();
+    }
+
+    function bta_slide(){
+        $___                     = new \Adminz\Helper\FlatsomeELement;
+		$___->shortcode_name     = __FUNCTION__;
+		$___->shortcode_title    = __FUNCTION__;
+		$___->shortcode_icon     = 'text';
+		$___->options            = [
+			//
+		];
+		$___->shortcode_callback = function ($atts, $content = null) {
+			ob_start();
+			?>
+            [section padding="0px" padding__sm="0px"]
+
+                [ux_slider label="pc" visibility="hide-for-small"]
+
+                    <?php
+                        $slide_pc = get_field( 'slide_pc', 'option' );
+                        foreach ((array)$slide_pc as $key => $value) {
+                            ?>
+                            [ux_image id="<?= $value['image'] ?>" image_size="original" link="<?= $value['link']?>"]
+                            <?php 
+                        }
+                    ?>
+
+                [/ux_slider]
+                [ux_slider label="mobile" visibility="show-for-small"]
+
+                    <?php
+                        $slide_mobile = get_field( 'slide_mobile', 'option' );
+                        foreach ((array)$slide_mobile as $key => $value) {
+                            ?>
+                            [ux_image id="<?= $value['image'] ?>" image_size="original" link="<?= $value['link']?>"]
+                            <?php 
+                        }
+                    ?>
+
+
+                [/ux_slider]
+
+            [/section]
+
+            <?php
+            return do_shortcode( ob_get_clean() );
+		};
+		$___->general_element();
     }
 
     function bta_testimonial(){
