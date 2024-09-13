@@ -24,7 +24,7 @@ class Woocommerce {
 			$login_page = wc_get_page_permalink( 'myaccount' );
 			wp_redirect( $login_page );
 			exit;
-		} );
+		});
 		
     }
 
