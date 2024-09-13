@@ -16,7 +16,17 @@ class Woocommerce {
         $this->shortcode();
         $this->cat_item_thumbnail();
         $this->add_header_product_image();
+        $this->login_faild();
 	}
+
+    function login_faild(){
+		add_action( 'wp_login_failed', function () {
+			$login_page = wc_get_page_permalink( 'myaccount' );
+			wp_redirect( $login_page );
+			exit;
+		} );
+		
+    }
 
     function add_header_product_image(){
 		add_action( 'template_redirect', function(){

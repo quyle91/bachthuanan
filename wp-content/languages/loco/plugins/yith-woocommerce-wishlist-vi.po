@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2024-09-07 10:26+0000\n"
+"PO-Revision-Date: 2024-09-13 06:57+0000\n"
 "Last-Translator: \n"
 "Language-Team: Tiếng Việt\n"
 "Language: vi\n"
@@ -27,7 +27,7 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-1: plugin-upgrade\n"
 "X-Poedit-SearchPathExcluded-2: node_modules\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.6.11; wp-6.6.1"
+"X-Loco-Version: 2.6.11; wp-6.6.2"
 
 #: includes/class-yith-wcwl-admin.php:107
 msgid "Wishlist Page"
@@ -901,7 +901,7 @@ msgstr ""
 
 #: plugin-options/settings/wishlist_page-options.php:241
 msgid "My wishlist"
-msgstr ""
+msgstr "Danh sách yêu thích"
 
 #: plugin-options/settings/wishlist_page-options.php:246
 msgid "\"Add to cart\" text"
@@ -1251,7 +1251,7 @@ msgstr ""
 
 #: templates/wishlist-view-mobile.php:199 templates/wishlist-view.php:431
 msgid "In Stock"
-msgstr ""
+msgstr "Còn hàng"
 
 #: templates/wishlist-view-mobile.php:232 templates/wishlist-view.php:544
 msgid "Move"
@@ -1272,11 +1272,11 @@ msgstr ""
 
 #: templates/wishlist-view.php:102
 msgid "Product name"
-msgstr ""
+msgstr "Sản phẩm"
 
 #: templates/wishlist-view.php:122
 msgid "Unit price"
-msgstr ""
+msgstr "Giá"
 
 #: templates/wishlist-view.php:143
 msgid "Quantity"
@@ -1284,7 +1284,7 @@ msgstr ""
 
 #: templates/wishlist-view.php:164
 msgid "Stock status"
-msgstr ""
+msgstr "Tồn kho"
 
 #: templates/wishlist-view.php:206
 msgid "Arrange"

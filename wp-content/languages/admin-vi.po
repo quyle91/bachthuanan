@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 6.6.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-09-04 15:14:35+0000\n"
+"PO-Revision-Date: 2024-09-11 12:34:44+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -192,77 +192,77 @@ msgstr "Nếu bạn là tác giả plugin, bạn có thể tìm hiểu thêm v�
 msgid "If you are a plugin author, you can learn more about <a href=\"https://developer.wordpress.org/plugins/privacy/adding-the-personal-data-eraser-to-your-plugin/\">how to add the Personal Data Eraser to a plugin</a>."
 msgstr "Nếu bạn là tác giả plugin, bạn có thể tìm hiểu thêm về <a href=\"https://developer.wordpress.org/plugins/privacy/adding-the-personal-data-eraser-to-your-plugin/\">cách thực hiện để thêm Công cụ xóa dữ liệu cá nhân vào plugin</a>."
 
-#: wp-admin/about.php:187
+#: wp-admin/about.php:212
 msgid "See everything new"
 msgstr "Xem mọi thứ mới"
 
-#: wp-admin/about.php:187
+#: wp-admin/about.php:212
 msgid "https://wordpress.org/download/releases/6-6/"
 msgstr "https://wordpress.org/download/releases/6-6/"
 
-#: wp-admin/about.php:183
+#: wp-admin/about.php:208
 msgid "For a comprehensive overview of all the new features and enhancements in WordPress 6.6, please visit the feature-showcase website."
 msgstr "Để có cái nhìn tổng quan toàn diện về tất cả các tính năng và cải tiến mới trong WordPress 6.6, vui lòng truy cập trang web giới thiệu tính năng."
 
-#: wp-admin/about.php:181
+#: wp-admin/about.php:206
 msgid "And much more"
 msgstr "Và nhiều hơn nữa"
 
-#: wp-admin/about.php:174
+#: wp-admin/about.php:199
 msgid "55+ accessibility fixes and enhancements focus on foundational aspects of the WordPress experience, particularly the data views component powering the new site editing experience and areas like the Inserter that provide a key way of interacting with blocks and patterns."
 msgstr "Hơn 55 bản sửa lỗi và cải tiến về khả năng truy cập tập trung vào các khía cạnh nền tảng của trải nghiệm WordPress, đặc biệt là thành phần chế độ xem dữ liệu hỗ trợ trải nghiệm chỉnh sửa trang web mới và các khu vực như Trình chèn cung cấp cách tương tác chính với các khối và mẫu."
 
 #. translators: %1$s: code-formatted "WP_Theme_JSON", %2$s: code-formatted
 #. "data-wp-on-async", %%: escaped percent sign, leave as %%.
-#: wp-admin/about.php:159
+#: wp-admin/about.php:184
 msgid "WordPress 6.6 includes important updates like removing redundant %1$s calls, disabling autoload for large options, eliminating unnecessary polyfill dependencies, lazy loading post embeds, introducing the %2$s directive, and a 33%% reduction in template loading time in the editor."
 msgstr "WordPress 6.6 bao gồm các cập nhật quan trọng như xóa các cuộc gọi %1$s dư thừa, vô hiệu hóa tính năng tự động tải cho các tùy chọn lớn, loại bỏ các phụ thuộc polyfill không cần thiết, lười tải bài nhúng nhúng, giới thiệu chỉ thị %2$s và giảm 33%% thời gian tải mẫu trong biên tập viên."
 
-#: wp-admin/about.php:136
+#: wp-admin/about.php:161
 msgid "Allow specific pieces of content to be customized in each instance of a synced pattern while keeping a consistent style for all instances, simplifying future updates. Currently, you can set overrides for Heading, Paragraph, Button, and Image blocks."
 msgstr "Cho phép tùy chỉnh các phần nội dung cụ thể trong từng phiên bản của mẫu được đồng bộ hóa trong khi vẫn giữ kiểu nhất quán cho tất cả các phiên bản, đơn giản hóa các bản cập nhật trong tương lai. Hiện tại, bạn có thể đặt ghi đè cho các khối Tiêu đề, Đoạn, Nút và Hình ảnh."
 
-#: wp-admin/about.php:136
+#: wp-admin/about.php:161
 msgid "Add the ability to customize content in synced patterns."
 msgstr "Thêm khả năng tùy chỉnh nội dung theo mẫu được đồng bộ hóa."
 
-#: wp-admin/about.php:119
+#: wp-admin/about.php:144
 msgid "Enjoy the ease of plugin auto-updates with the safety of rollbacks if anything goes wrong, improving your site&#8217;s security while minimizing potential downtime."
 msgstr "Tận hưởng sự dễ dàng của việc tự động cập nhật plugin cùng với tính năng khôi phục an toàn nếu có sự cố xảy ra, cải thiện tính bảo mật cho trang web của bạn đồng thời giảm thiểu thời gian ngừng hoạt động có thể xảy ra."
 
-#: wp-admin/about.php:119
+#: wp-admin/about.php:144
 msgid "Auto-update your plugins with peace of mind."
 msgstr "Tự động cập nhật plugin của bạn một cách an tâm."
 
-#: wp-admin/about.php:118
+#: wp-admin/about.php:143
 msgid "Rollbacks for plugin auto-updates"
 msgstr "Các bản khôi phục lại cho cập nhật tự động của plugin"
 
-#: wp-admin/about.php:112
+#: wp-admin/about.php:137
 msgid "See all of your pages and a preview of any selected page before you edit via a new side-by-side layout in the Site Editor."
 msgstr "Xem tất cả các trang của bạn và bản xem trước của bất kỳ trang nào đã chọn trước khi bạn chỉnh sửa thông qua bố cục cạnh nhau mới trong Trình chỉnh sửa trang."
 
-#: wp-admin/about.php:112
+#: wp-admin/about.php:137
 msgid "Simplify your workflow with a new layout built for pages."
 msgstr "Đơn giản hóa quy trình làm việc của bạn bằng bố cục mới được tạo cho các trang."
 
-#: wp-admin/about.php:111
+#: wp-admin/about.php:136
 msgid "Quick previews for pages"
 msgstr "Xem trước nhanh cho các trang"
 
-#: wp-admin/about.php:95
+#: wp-admin/about.php:120
 msgid "Block theme authors can create unlimited individual color or font sets to offer more specific design options within the same theme. These sets provide more contained design possibilities, allowing for customization without changing the site&#8217;s broader styling, beyond color or typography settings."
 msgstr "Tác giả giao diện khối có thể tạo các bộ màu hoặc phông chữ riêng lẻ không giới hạn để cung cấp các tùy chọn thiết kế cụ thể hơn trong cùng một chủ đề. Những bộ này cung cấp nhiều khả năng thiết kế khép kín hơn, cho phép tùy chỉnh mà không thay đổi kiểu dáng rộng hơn của trang web, ngoài cài đặt màu sắc hoặc kiểu chữ."
 
-#: wp-admin/about.php:95
+#: wp-admin/about.php:120
 msgid "Add more design options to any block theme."
 msgstr "Thêm nhiều tùy chọn thiết kế hơn cho bất kỳ giao diện khối nào."
 
-#: wp-admin/about.php:94
+#: wp-admin/about.php:119
 msgid "Color palettes & font sets"
 msgstr "Bảng màu & phông chữ"
 
-#: wp-admin/about.php:87
+#: wp-admin/about.php:112
 msgid "Create and deploy beautiful and coherent design elements across your sites with WordPress 6.6. A new rollback option for auto-updating plugins gives you control, flexibility, and peace of mind."
 msgstr "Tạo và triển khai các yếu tố thiết kế đẹp mắt và mạch lạc trên các trang web của bạn với WordPress 6.6. Tùy chọn khôi phục mới cho các plugin tự động cập nhật mang lại cho bạn quyền kiểm soát, tính linh hoạt và sự an tâm."
 
@@ -404,11 +404,11 @@ msgstr "Cài đặt ngay"
 msgid "Created by a worldwide team of passionate individuals"
 msgstr "Tạo ra bởi một đội ngũ toàn cầu các cá nhân đam mê."
 
-#: wp-admin/about.php:173
+#: wp-admin/about.php:198
 msgid "Accessibility improvements"
 msgstr "Cải thiện khả năng tiếp cận"
 
-#: wp-admin/about.php:154
+#: wp-admin/about.php:179
 msgid "Performance updates"
 msgstr "Cập nhật hiệu suất"
 
@@ -478,12 +478,12 @@ msgid "When using Bulk Edit, you can change the metadata (categories, author, et
 msgstr "Khi sử dụng chỉnh sửa hàng loạt, bạn có thể thay đổi siêu dữ liệu (danh mục, tác giả, v.v.) cho tất cả các bài viết được chọn cùng một lúc. Để loại bỏ một bài viết khỏi nhóm, chỉ cần nhấp vào nút %s<span class=\"screen-reader-text\">remove</span> bên cạnh tên của nó trong khu vực chỉnh sửa hàng loạt xuất hiện."
 
 #. translators: 1: WordPress Release Notes link, 2: WordPress version number.
-#: wp-admin/about.php:252
+#: wp-admin/about.php:277
 msgid "<a href=\"%1$s\">Read the WordPress %2$s Release Notes</a> for information on installation, enhancements, fixed issues, release contributors, learning resources, and the list of file changes."
 msgstr "<a href=\"%1$s\">Đọc các Ghi chú Phát hành WordPress %2$s</a> để biết thông tin về cách cài đặt, cải tiến, sửa lỗi, các đóng góp từ người phát hành, tài nguyên học tập và danh sách các thay đổi trong tệp."
 
 #. translators: 1: WordPress Field Guide link, 2: WordPress version number.
-#: wp-admin/about.php:233
+#: wp-admin/about.php:258
 msgid "Explore the <a href=\"%1$s\">WordPress %2$s Field Guide</a>. Learn about the changes in this release with detailed developer notes to help you build with WordPress."
 msgstr "Khám phá <a href=\"%1$s\">Hướng dẫn Sử dụng WordPress %2$s</a>. Tìm hiểu về các thay đổi trong phiên bản này với các ghi chú chi tiết từ nhà phát triển để giúp bạn xây dựng trang web với WordPress."
 
@@ -504,7 +504,7 @@ msgid "Your WordPress version is %1$s, however the new plugin version requires %
 msgstr "Phiên bản WordPress của bạn là %1$s, tuy nhiên phiên bản mới của plugin yêu cầu %2$s."
 
 #. translators: %s: WordPress version.
-#: wp-admin/about.php:66
+#: wp-admin/about.php:66 wp-admin/about.php:91
 msgid "https://wordpress.org/support/wordpress-version/version-%s/"
 msgstr "https://wordpress.org/support/wordpress-version/version-%s/"
 
@@ -971,7 +971,7 @@ msgid "Be the future of WordPress"
 msgstr "Hãy là tương lai của WordPress"
 
 #. translators: 1: Learn WordPress link, 2: Workshops link.
-#: wp-admin/about.php:212
+#: wp-admin/about.php:237
 msgid "<a href=\"%1$s\">Learn WordPress</a> is a free resource for new and experienced WordPress users. Learn is stocked with how-to videos on using various features in WordPress, <a href=\"%2$s\">interactive workshops</a> for exploring topics in-depth, and lesson plans for diving deep into specific areas of WordPress."
 msgstr "<a href=\"%1$s\">Học WordPress</a> là một nguồn tài nguyên miễn phí dành cho người dùng WordPress mới và có kinh nghiệm. Learn cung cấp các video hướng dẫn về cách sử dụng các tính năng khác nhau trong WordPress, <a href=\"%2$s\">các workshop tương tác</a> để khám phá các chủ đề chi tiết, và kế hoạch học tập để tìm hiểu sâu vào các lĩnh vực cụ thể của WordPress."
 
@@ -1116,12 +1116,12 @@ msgid "<a href=\"https://wordpress.org/documentation/article/customizer/\">Docum
 msgstr "<a href=\"https://wordpress.org/documentation/article/customizer/\">Tài liệu về Công cụ tùy chỉnh</a>"
 
 #. translators: The localized WordPress download URL.
-#: wp-admin/about.php:338
+#: wp-admin/about.php:363
 msgid "https://wordpress.org/download/"
 msgstr "https://wordpress.org/download"
 
 #. translators: %s: The major version of WordPress for this branch.
-#: wp-admin/about.php:335
+#: wp-admin/about.php:360
 msgid "This is the final release of WordPress %s"
 msgstr "Đây là bản phát hành cuối cùng của WordPress %s"
 
@@ -1447,21 +1447,21 @@ msgid "Reach out to WordPress Core developers to ensure you'll never have this p
 msgstr "Liên hệ với các nhà phát triển WordPress Core để đảm bảo bạn sẽ không bao giờ gặp lại vấn đề này nữa."
 
 #. translators: 1: WordPress version number, 2: Link to update WordPress
-#: wp-admin/about.php:332
+#: wp-admin/about.php:357
 msgid "Important! Your version of WordPress (%1$s) will stop receiving security updates in the near future. To keep your site secure, please <a href=\"%2$s\">update to the latest version of WordPress</a>."
 msgstr "Quan trọng! Phiên bản WordPress của bạn (%1$s) sẽ sớm ngừng nhận các bản cập nhật bảo mật. Để bảo vệ trang web của bạn, vui lòng <a href=\"%2$s\">cập nhật lên phiên bản mới nhất của WordPress</a>."
 
 #. translators: 1: WordPress version number, 2: Link to update WordPress
-#: wp-admin/about.php:329
+#: wp-admin/about.php:354
 msgid "Important! Your version of WordPress (%1$s) is no longer supported, you will not receive any security updates for your website. To keep your site secure, please <a href=\"%2$s\">update to the latest version of WordPress</a>."
 msgstr "Quan trọng! Phiên bản WordPress của bạn (%1$s) không còn được hỗ trợ nữa, bạn sẽ không nhận được bất kỳ bản cập nhật bảo mật nào cho trang web của mình. Để bảo vệ trang web của bạn, vui lòng <a href=\"%2$s\">cập nhật lên phiên bản mới nhất của WordPress</a>."
 
-#: wp-admin/about.php:234
+#: wp-admin/about.php:259
 msgid "https://make.wordpress.org/core/wordpress-6-6-field-guide/"
 msgstr "https://make.wordpress.org/core/wordpress-6-5-field-guide/"
 
 #. translators: %s: Version number.
-#: wp-admin/about.php:203
+#: wp-admin/about.php:228
 msgid "Learn more about WordPress %s"
 msgstr "Tìm hiểu thêm về WordPress %s"
 
@@ -1709,11 +1709,11 @@ msgstr "WordPress là phần mềm miễn phí và là mã nguồn mở"
 #: wp-admin/menu.php:275 wp-admin/menu.php:276 wp-admin/menu.php:305
 #: wp-admin/network/menu.php:107
 msgid "Plugin File Editor"
-msgstr "Trình chỉnh sửa plugin"
+msgstr "Sửa tệp tin plugin"
 
 #: wp-admin/menu.php:255 wp-admin/menu.php:256 wp-admin/network/menu.php:82
 msgid "Theme File Editor"
-msgstr "Sửa tập tin giao diện"
+msgstr "Sửa tệp tin giao diện"
 
 #. translators: %s: Documentation URL.
 #: wp-admin/user-edit.php:856
@@ -2365,7 +2365,7 @@ msgstr "Thêm mật khẩu ứng dụng mới"
 msgid "Required to create an Application Password, but not to update the user."
 msgstr "Bắt buộc phải tạo Mật khẩu ứng dụng, nhưng không được cập nhật người dùng."
 
-#: wp-admin/about.php:273
+#: wp-admin/about.php:298
 msgid "Go to Updates"
 msgstr "Tới Cập nhật"
 
@@ -3268,7 +3268,7 @@ msgstr "Bật cập nhật tự động"
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:433
 msgid "Auto-updates Disabled <span class=\"count\">(%s)</span>"
 msgid_plural "Auto-updates Disabled <span class=\"count\">(%s)</span>"
-msgstr[0] "Đã tắt Tự động cập nhật <span class=\"count\">(%s)</span>"
+msgstr[0] "Đã tắt tự động cập nhật <span class=\"count\">(%s)</span>"
 
 #. translators: %s: Number of plugins.
 #. translators: %s: Number of themes.
@@ -3631,11 +3631,11 @@ msgstr "<a href=\"https://wordpress.org/documentation/article/plugins-add-new-sc
 
 #: wp-admin/edit.php:326
 msgid "<a href=\"https://wordpress.org/documentation/article/pages-screen/\">Documentation on Managing Pages</a>"
-msgstr "<a href=\"https://wordpress.org/documentation/article/pages-screen/\">Tài liệu về Quản lý Trang</a>"
+msgstr "<a href=\"https://wordpress.org/documentation/article/pages-screen/\">Tài liệu về quản lý trang</a>"
 
 #: wp-admin/edit.php:301
 msgid "<a href=\"https://wordpress.org/documentation/article/posts-screen/\">Documentation on Managing Posts</a>"
-msgstr "<a href=\"https://wordpress.org/documentation/article/posts-screen/\">Tài liệu về Quản lý Bài viết</a>"
+msgstr "<a href=\"https://wordpress.org/documentation/article/posts-screen/\">Tài liệu về quản lý bài viết</a>"
 
 #: wp-admin/options-discussion.php:32
 msgid "<a href=\"https://wordpress.org/documentation/article/settings-discussion-screen/\">Documentation on Discussion Settings</a>"
@@ -3691,7 +3691,7 @@ msgstr "<a href=\"https://wordpress.org/documentation/article/pages-add-new-scre
 
 #: wp-admin/upload.php:199 wp-admin/upload.php:401
 msgid "<a href=\"https://wordpress.org/documentation/article/media-library-screen/\">Documentation on Media Library</a>"
-msgstr "<a href=\"https://wordpress.org/documentation/article/media-library-screen/\">Tài liệu về media tệp tin</a>"
+msgstr "<a href=\"https://wordpress.org/documentation/article/media-library-screen/\">Tài liệu về thư viện media</a>"
 
 #: wp-admin/revision.php:159
 msgid "<a href=\"https://wordpress.org/documentation/article/revisions/\">Revisions Management</a>"
@@ -3707,7 +3707,7 @@ msgstr "<a href=\"https://wordpress.org/documentation/article/manage-plugins/\">
 
 #: wp-admin/index.php:132
 msgid "<a href=\"https://wordpress.org/documentation/article/dashboard-screen/\">Documentation on Dashboard</a>"
-msgstr "<a href=\"https://wordpress.org/documentation/article/dashboard-screen/\">Tài liệu trên trang tổng quan</a>"
+msgstr "<a href=\"https://wordpress.org/documentation/article/dashboard-screen/\">Tài liệu về bảng tổng quan</a>"
 
 #: wp-admin/user-new.php:301
 msgid "<a href=\"https://wordpress.org/documentation/article/users-add-new-screen/\">Documentation on Adding New Users</a>"
@@ -3807,7 +3807,7 @@ msgstr "Trang chính sách bảo mật"
 #: wp-admin/includes/template.php:2330
 msgctxt "page label"
 msgid "Posts Page"
-msgstr "Trang Bài viết"
+msgstr "Trang bài viết"
 
 #: wp-admin/includes/template.php:2326
 msgctxt "page label"
@@ -3817,7 +3817,7 @@ msgstr "Trang chủ"
 #: wp-admin/includes/template.php:2317
 msgctxt "post status"
 msgid "Sticky"
-msgstr "Đính"
+msgstr "Ghim"
 
 #: wp-admin/includes/template.php:2309
 msgctxt "post status"
@@ -5506,7 +5506,7 @@ msgstr "Plugin này không làm việc với phiên bản WordPress và PHP hi�
 
 #. translators: %s: WordPress version number.
 #. translators: %s: WordPress version.
-#: wp-admin/about.php:255 wp-admin/includes/update.php:324
+#: wp-admin/about.php:280 wp-admin/includes/update.php:324
 #: wp-admin/index.php:119 wp-admin/install.php:249 wp-admin/update-core.php:94
 #: wp-admin/upgrade.php:81
 msgid "https://wordpress.org/documentation/wordpress-version/version-%s/"
@@ -7461,7 +7461,7 @@ msgstr "%1$s, %2$s"
 
 #: wp-admin/edit-form-advanced.php:376
 msgid "<strong>Publish</strong> &mdash; You can set the terms of publishing your post in the Publish box. For Status, Visibility, and Publish (immediately), click on the Edit link to reveal more options. Visibility includes options for password-protecting a post or making it stay at the top of your blog indefinitely (sticky). The Password protected option allows you to set an arbitrary password for each post. The Private option hides the post from everyone except editors and administrators. Publish (immediately) allows you to set a future or past date and time, so you can schedule a post to be published in the future or backdate a post."
-msgstr "<strong>Bài viết</strong> &mdash; Bạn có thể cài đặt những thông tin xuất bản của bạn ở mục đăng bài viết. Với Trạng thái, Chế độ xem, và Đăng bài viết (lập tức), Nhấp vào đường dẫn chỉnh sửa để hiển thị tuỳ chọn nâng cao. Chế độ xem bao gồm tuỳ chọn bảo vệ bài viết bằng mật khẩu hoặc đặt bài viết là ghim. Tuỳ chọn bảo vệ bài viết bằng mật khẩu cho phép bạn đặt một mật khẩu bất kỳ cho từng bài viết. Tuỳ chọn Bí mật sẽ ẩn bài viết của bạn khỏi mọi người ngoại trừ biên tập viên và quản lý. Đăng bài viết (lập tức) cho phép bạn đặt ngày giờ đăng bài ở tương lại hoặc quá khứ, vì vậy bạn có thể đặt lịch đăng cho bài viết hoặc lùi ngày về trước của một bài viết."
+msgstr "<strong>Bài viết</strong> &mdash; Bạn có thể cài đặt những thông tin xuất bản của bạn ở mục đăng bài viết. Với Trạng thái, chế độ xem, và đăng bài viết (lập tức), Nhấp vào đường dẫn chỉnh sửa để hiển thị tuỳ chọn nâng cao. Chế độ xem bao gồm tuỳ chọn bảo vệ bài viết bằng mật khẩu hoặc đặt bài viết là ghim. Tuỳ chọn bảo vệ bài viết bằng mật khẩu cho phép bạn đặt một mật khẩu bất kỳ cho từng bài viết. Tuỳ chọn Bí mật sẽ ẩn bài viết của bạn khỏi mọi người ngoại trừ biên tập viên và quản lý. Đăng bài viết (lập tức) cho phép bạn đặt ngày giờ đăng bài ở tương lại hoặc quá khứ, vì vậy bạn có thể đặt lịch đăng cho bài viết hoặc lùi ngày về trước của một bài viết."
 
 #. translators: %s: New email.
 #: wp-admin/user-edit.php:556
@@ -7805,7 +7805,7 @@ msgid "(Currently set to: %s)"
 msgstr "(Hiện tại: %s)"
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:303
+#: wp-admin/about.php:328
 msgid "<strong>Version %s</strong> addressed one security issue."
 msgstr "<strong>Phiên bản %s</strong> đã giải quyết vấn đề bảo mật."
 
@@ -7817,15 +7817,15 @@ msgstr "https://en.gravatar.com/"
 msgid "Profile Picture"
 msgstr "Ảnh đại diện"
 
-#: wp-admin/about.php:300
+#: wp-admin/about.php:46 wp-admin/about.php:325
 msgid "Maintenance and Security Releases"
 msgstr "Các phiên bản bảo trì và bảo mật"
 
-#: wp-admin/about.php:297
+#: wp-admin/about.php:322
 msgid "Security Releases"
 msgstr "Các phiên bản bảo mật"
 
-#: wp-admin/about.php:294
+#: wp-admin/about.php:319
 msgid "Maintenance Releases"
 msgstr "Các phiên bản bảo trì"
 
@@ -8964,7 +8964,7 @@ msgstr "Tìm plugins"
 
 #: wp-admin/plugin-install.php:51
 msgid "Add Plugins"
-msgstr "Cài plugin"
+msgstr "Cài Plugin"
 
 #. translators: 1: WPLANG, 2: wp-config.php
 #: wp-admin/options-general.php:334
@@ -10240,7 +10240,7 @@ msgstr "%s đang biên tập"
 
 #: wp-admin/edit-form-advanced.php:361
 msgid "You can upload and insert media (images, audio, documents, etc.) by clicking the Add Media button. You can select from the images and files already uploaded to the Media Library, or upload new media to add to your page or post. To create an image gallery, select the images to add and click the &#8220;Create a new gallery&#8221; button."
-msgstr "Bạn có thể tải lên và chèn nội dung đa phương tiện (ảnh, âm thanh, tài liệu, v.v.) bằng cách bấm vào nút Thêm Nội Dung Đa Phương Tiện. Bạn có thể chọn từ những ảnh và tập tin đã được tải lên media Nội Dung Đa Phương Tiện, hoặc tải lên nội dung mới để thêm vào trang tĩnh hoặc bài viết của bạn. Để tạo một bộ sưu tập ảnh, chọn những ảnh bạn muốn và bấm vào nút &#8220;Tạo một bộ sưu tập mới&#8221;."
+msgstr "Bạn có thể tải lên và chèn media (ảnh, âm thanh, tài liệu, v.v.) bằng cách bấm vào nút thêm Media. Bạn có thể chọn từ những ảnh và tập tin đã được tải lên thư viện media, hoặc tải lên nội dung mới để thêm vào trang tĩnh hoặc bài viết của bạn. Để tạo một thư viện ảnh, chọn những ảnh bạn muốn và bấm vào nút &#8220;Tạo một thư viện ảnh mới&#8221;."
 
 #: wp-admin/includes/image-edit.php:83
 msgid "Image rotation is not supported by your web host."
@@ -10683,7 +10683,7 @@ msgstr "Chọn toàn bộ"
 
 #: wp-admin/includes/meta-boxes.php:186 wp-admin/js/post.js:905
 msgid "Public, Sticky"
-msgstr "Công khai, Chú ý"
+msgstr "Công khai, ghim"
 
 #: wp-admin/includes/meta-boxes.php:109 wp-admin/includes/meta-boxes.php:154
 #: wp-admin/js/post.js:825 wp-admin/js/post.js:827
@@ -11134,44 +11134,44 @@ msgstr "Hiển thị thanh công cụ khi xem trang"
 
 #. translators: %s: HelpHub URL.
 #. translators: %s: Documentation URL.
-#: wp-admin/about.php:63 wp-admin/about.php:326
+#: wp-admin/about.php:63 wp-admin/about.php:88 wp-admin/about.php:351
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "Để biết thêm thông tin, xem <a href=\"%s\">thông báo phát hành</a>."
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:320
+#: wp-admin/about.php:345
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "<strong>Phiên bản %1$s</strong> đã giải quyết một số vấn đề về bảo mật và sửa %2$s lỗi."
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:314
+#: wp-admin/about.php:339
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "<strong>Phiên bản %1$s</strong> đã giải quyết một vấn đề về bảo mật và sửa %2$s lỗi."
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs.
-#: wp-admin/about.php:51 wp-admin/about.php:308
+#: wp-admin/about.php:51 wp-admin/about.php:76 wp-admin/about.php:333
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "<strong>Phiên bản %1$s</strong> đã giải quyết %2$s lỗi."
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:305
+#: wp-admin/about.php:330
 msgid "<strong>Version %s</strong> addressed some security issues."
 msgstr "<strong>Phiên bản %1$s</strong> đã giải quyết một số vấn đề về bảo mật."
 
-#: wp-admin/about.php:46 wp-admin/about.php:299
+#: wp-admin/about.php:324
 msgid "Maintenance and Security Release"
 msgstr "Các bản Bảo Mật và Bảo Trì"
 
-#: wp-admin/about.php:296
+#: wp-admin/about.php:321
 msgid "Security Release"
 msgstr "Các bản Bảo Mật"
 
-#: wp-admin/about.php:293
+#: wp-admin/about.php:318
 msgid "Maintenance Release"
 msgstr "Các bản Bảo Trì"
 
@@ -11445,15 +11445,15 @@ msgid "Because this is a multisite installation, you may add accounts that alrea
 msgstr "Do đây là một bản cài đặt đa mạng, bạn có thể thêm tài khoản đã tồn tại trong Mạng Lưới bằng cách chỉ định tên truy cập hoặc địa chỉ thư điện tử, và lựa chọn một vai trò người dùng. Để có thêm lựa chọn, như chỉ định mật khẩu, bạn phải là Quản Trị Viên Mạng Lưới và sử dụng liên kết hiển thị phía dưới tên người dùng khi di chuột lên để Biên Tập hồ sơ người dùng tại Quản Trị Mạng Lưới > Tất Cả Người Dùng."
 
 #. translators: %s: Version number.
-#: wp-admin/about.php:81
+#: wp-admin/about.php:106
 msgid "Welcome to WordPress %s"
 msgstr "Chào mừng đến với WordPress %s"
 
-#: wp-admin/about.php:280
+#: wp-admin/about.php:305
 msgid "Go to Dashboard &rarr; Home"
 msgstr "Đến Bảng tin &rarr; Trang chủ"
 
-#: wp-admin/about.php:273
+#: wp-admin/about.php:298
 msgid "Go to Dashboard &rarr; Updates"
 msgstr "Tới Bảng tin &rarr; Cập nhật"
 
@@ -11710,7 +11710,7 @@ msgstr "Phiên bản %s"
 #: wp-admin/includes/class-wp-plugins-list-table.php:565
 msgid "Update Available <span class=\"count\">(%s)</span>"
 msgid_plural "Update Available <span class=\"count\">(%s)</span>"
-msgstr[0] "Nâng Cấp Hữu Dụng <span class=\"count\">(%s)</span>"
+msgstr[0] "Có bản cập nhật <span class=\"count\">(%s)</span>"
 
 #: wp-admin/includes/class-wp-plugins-list-table.php:806
 #: wp-admin/includes/class-wp-plugins-list-table.php:896
@@ -12232,7 +12232,7 @@ msgstr "<strong>Xin lưu ý:</strong> Mọi tùy chỉnh bạn đã thực hiệ
 msgctxt "posts"
 msgid "Sticky <span class=\"count\">(%s)</span>"
 msgid_plural "Sticky <span class=\"count\">(%s)</span>"
-msgstr[0] "Dính <span class=\"count\">(%s)</span>"
+msgstr[0] "Ghim <span class=\"count\">(%s)</span>"
 
 #: wp-admin/update-core.php:1117
 msgid "Check again."
@@ -12763,7 +12763,7 @@ msgstr "Bạn có thể tùy chỉnh cách hiển thị của màn hình này th
 
 #: wp-admin/plugins.php:793
 msgid "Search installed plugins"
-msgstr "Tìm kiếm các plugin đã cài đặt"
+msgstr "Tìm kiếm plugin đã cài đặt"
 
 #: wp-admin/nav-menus.php:832
 msgid "Your theme supports one menu. Select which menu you would like to use."
@@ -13187,7 +13187,7 @@ msgstr "Cập nhật WordPress"
 msgid "Edit menu item"
 msgstr "Sửa mục trong menu"
 
-#: wp-admin/about.php:280
+#: wp-admin/about.php:305
 msgid "Go to Dashboard"
 msgstr "Xem bảng tin"
 
@@ -14426,7 +14426,7 @@ msgstr "Chủ đề"
 
 #: wp-admin/includes/theme.php:345
 msgid "Sticky Post"
-msgstr "Bài viết đáng chú ý"
+msgstr "Bài viết ghim"
 
 #: wp-admin/includes/theme.php:348
 msgid "Theme Options"
@@ -14546,7 +14546,7 @@ msgstr "Ghim bài viết này lên đầu"
 
 #: wp-admin/includes/class-wp-posts-list-table.php:2003
 msgid "Not Sticky"
-msgstr "Không dán"
+msgstr "Không ghim"
 
 #: wp-admin/includes/class-wp-posts-list-table.php:1961
 msgid "Allow Pings"
@@ -15021,11 +15021,11 @@ msgstr "Tìm kiếm"
 
 #: wp-admin/includes/media.php:2691
 msgid "Update gallery settings"
-msgstr "Cập nhật cài đặt cho media"
+msgstr "Cập nhật cài đặt thư viện ảnh"
 
 #: wp-admin/includes/media.php:2670
 msgid "Gallery columns:"
-msgstr "Số cột:"
+msgstr "Cột thư viện ảnh:"
 
 #: wp-admin/includes/media.php:2655
 msgid "Order:"
